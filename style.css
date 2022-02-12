@@ -1,0 +1,140 @@
+:root {
+  --font: "Barlow", sans-serif;
+}
+*:focus {
+  outline: none !important;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+#allwrap {
+  height: auto;
+  width: 30vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  /* background: linear-gradient(
+    180deg,
+    rgb(202, 189, 161) 0%,
+    rgba(233, 219, 200, 1) 55%,
+    rgba(255, 255, 255, 1) 100%
+  ); */
+  background: linear-gradient(0deg, #1cb5e0 0%, #000851 100%);
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: var(--font);
+  color: aliceblue;
+}
+h3 {
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: aliceblue;
+}
+
+input {
+  padding: 5px;
+  border-radius: 7px;
+  border-style: none;
+  margin-right: 10px;
+}
+input:hover {
+  box-shadow: 5px 5px 15px #0b103a;
+}
+input:focus {
+  box-shadow: 5px 5px 15px #0b103a;
+}
+::placeholder {
+  color: rgb(197, 197, 197);
+}
+#userinput {
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1;
+  row-gap: 0.2rem;
+  text-align: left;
+}
+li.normal {
+  margin-right: 1rem;
+}
+li {
+  list-style-type: none;
+  max-width: 30rem;
+  text-align: right;
+}
+.done {
+  text-decoration: line-through;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(235, 235, 235);
+}
+
+button.remove {
+  border: 0;
+  border-radius: 0.25rem;
+  background: rgb(187, 144, 216);
+  color: white;
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+button.remove:hover {
+  box-shadow: 5px 5px 17px rgb(102, 75, 121);
+}
+button.remove:active {
+  box-shadow: 5px 5px 17px rgb(133, 105, 153);
+}
+
+button#enter {
+  border: 0;
+  border-radius: 0.25rem;
+  background: rgb(187, 144, 216);
+  color: white;
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  width: 5rem;
+  cursor: pointer;
+}
+button#enter:hover {
+  box-shadow: 5px 5px 15px #0b2730ab;
+}
+button#enter:active {
+  box-shadow: 5px 5px 15px #1b4f5aab;
+}
