@@ -17,12 +17,6 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  /* background: linear-gradient(
-    180deg,
-    rgb(202, 189, 161) 0%,
-    rgba(233, 219, 200, 1) 55%,
-    rgba(255, 255, 255, 1) 100%
-  ); */
   background: linear-gradient(0deg, #1cb5e0 0%, #000851 100%);
   border-radius: 10px;
 }

@@ -1,27 +1,30 @@
+//Variables declarations
+
 const button = document.getElementById("enter");
 const input = document.getElementById("userinput");
 const ul = document.querySelector("ul");
 const wrapper = document.getElementById("wrapper");
 
+// function checking input lenght to avoid adding empty list items
 function inputLength() {
   return input.value.length;
 }
 
+// function that creates list item, a tag for clickability and delete button
 function createListElement() {
   const li = document.createElement("li");
   const a = document.createElement("a");
   const button = document.createElement("button");
 
-  ul.appendChild(li).classList.add("normal");
+  ul.appendChild(li).classList.add("normal");// append li to ul and add class"normal"
   a.appendChild(document.createTextNode(input.value));
   li.appendChild(a);
   a.setAttribute("href", "#");
-  a.classList.add("clickable");
   button.appendChild(document.createTextNode("Delete"));
   button.classList.add("remove");
   li.appendChild(button);
 
-  input.value = "";
+  input.value = ""; //erase the input window
 }
 
 function addListAfterClick() {
